@@ -132,6 +132,11 @@ movie_tile_content = '''
 
 
 def create_movie_tiles_content(movies):
+    """
+    function creates the movie tiles; gets the url content from youtube
+    output: tile with the content formatted
+
+    """ 
     # The HTML content for this section of the page
     content = ''
     for movie in movies:
@@ -154,6 +159,13 @@ def create_movie_tiles_content(movies):
 
 
 def open_movies_page(movies):
+    """
+    function takes the content from movies and opens the file for writing only
+    and overwrites an existing file or creates a new one. 
+    Input: html content and movies content
+    Output: opens browser with the page displayed.
+
+    """  
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
